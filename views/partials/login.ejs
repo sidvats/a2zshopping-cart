@@ -1,0 +1,20 @@
+<form action="/login" method="POST">
+    <h2>Login</h2>
+    <hr >
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" name="email" class="form-control"  aria-describedby="emailHelp" id="email" required>
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" name="password" class="form-control" id="password" required>
+    </div>
+    <% if(!errorlogin =="" ){ %>
+      <div class="alert alert-danger text-danger">
+        <%= errorlogin %>
+      </div>
+      <% }%>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="reset" class="btn btn-default"> Clear</button>
+  </form>

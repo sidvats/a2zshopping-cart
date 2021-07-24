@@ -1,0 +1,9 @@
+@import url('./bootstrap.min.css');
+.heading{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    border-radius: 9px;
+}
+.coloredtext{
+    color: rgb(204, 116, 8);
+}
