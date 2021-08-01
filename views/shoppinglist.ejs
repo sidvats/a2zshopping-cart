@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,33 @@
     <link rel="stylesheet" href="/style.css">
     <script src="/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <h1 class="text-center">Welcome to A2Z shopping cart</h1>
+    <div class="text-center coloredtext p-3 heading">
+        <h1>A2Z Shopping Cart</h1>
+    </div>
+    <hr>
+    <div>
+        <%-include('partials/nav.ejs')%>
+    </div>
+    
+    <div class="d-flex container">
+        <% products.forEach((product)=>{ %>
+            <div class="card text-white bg-dark mb-3 mx-5" style="max-width: 18rem;">
+                <div class="card-header fw-bold fs-3">
+                    <%= product.name %>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        &#8377; <%= product.price %>
+                    </h5>
+                    <p class="card-text">
+                        <%= product.description %>
+                    </p>
+                </div>
+            </div>
+            <% }) %>
+    </div>
 </body>
+
 </html>
