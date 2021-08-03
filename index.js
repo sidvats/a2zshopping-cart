@@ -6,7 +6,7 @@ const routes=require('./routes/app.routes');
 const mongoose=require("mongoose");
 const bodyparser=require('body-parser');
 const cookieParser = require('cookie-parser');
-mongoose.connect('mongodb+srv://sid-practice:GgTSDLiGbBjrfbnm@cluster0.l8k5m.mongodb.net/shoppingcart?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://sid-practice@cluster0.l8k5m.mongodb.net/shoppingcart?retryWrites=true&w=majority',
                 {
                     useNewUrlParser:true,
                     useUnifiedTopology:true,
